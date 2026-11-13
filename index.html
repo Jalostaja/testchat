@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plain Chat Widget Test</title>
+</head>
+<body>
+  <h1>Plain Chat Widget Test</h1>
+  <p>The Plain live chat widget should appear in the bottom-right corner.</p>
+
+  <script>
+  (function(d, script) {
+    script = d.createElement('script');
+    script.async = false;
+    script.onload = function(){
+      Plain.init({
+        appId: 'liveChatApp_01M7AJ65FCPPEA6KD9ZS3MJMJ6',
+      });
+    };
+    script.src = 'https://chat.cdn-plain.com/index.js';
+    d.getElementsByTagName('head')[0].appendChild(script);
+  }(document));
+  </script>
+</body>
+</html>
